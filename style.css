@@ -177,7 +177,10 @@ body {
         display: none;
     }
     .contenedorIconos{
-       display: none;
+        margin-top: 170%;
+        margin-left: 40%;
+        margin-bottom: 1rem;
+        max-width: 15rem;
     }
     .logo{
         margin-top: -15%;
