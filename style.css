@@ -177,9 +177,7 @@ body {
         display: none;
     }
     .contenedorIconos{
-        margin-top: 150%;
-        margin-left: 40%;
-        margin-bottom: 1rem;
+       display: none;
     }
     .logo{
         margin-top: -15%;
@@ -194,4 +192,8 @@ body {
     .boton, .separacionLinea{
         width: 90%;
     }
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    
 }
