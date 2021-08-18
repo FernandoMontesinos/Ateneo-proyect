@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: borders-box;
+    box-sizing: border-box;
+    
+}
+
+/* html {
+    overflow-x: hidden;
+} */
+
+body {
+    background-color: #ffdf00;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.containerImagen {
+    background-image: url(./assets/10.png);
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    display: flex;
+}
+
+.contenedorIconos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.iconoImagen {
+    width: 1.5rem;
+    margin-right: .5rem;
+}
+
+.contenedorIconoPausa {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-left: 75%;
+}
+
+.iconoPausa {
+    width: 1rem;
+    display: flex;
+}
+
+.containerLogin {
+    width: 95%;
+    margin: 1rem;
+}
+
+.logo {
+    background-color: #272727;
+    border-radius: 1rem;
+    width: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.imagenLogo {
+    width: 15rem;
+    padding: .5rem;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton {
+    background-color: #ffff;
+    border-radius: 1.5rem;
+    align-items: center;
+    border: none;
+    margin: .5rem;
+    width: 22rem;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    transition: background-color .3s ease-in-out;
+}
+
+.boton:hover{
+   cursor: pointer;
+   background-color: #cdcdcd;
+}
+
+.textoBoton {
+    margin: 33%;
+    font-family: 'Montserrat', sans-serif;
+    color: #272727;
+}
+
+.imagenGmailBoton,
+.imagenFacebookBoton,
+.imagenemailBoton {
+    width: 2.5rem;
+    margin: .3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.separacionLinea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoLinea {
+    font-weight: bold;
+    float: left;
+}
+
+.linea {
+    margin: 0px 20px;
+    width: 9rem;
+    border-top: 1px solid #272727;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.nuevoRegistro {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.registrateAhora {
+    text-decoration: none;
+    color: #00aae4;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    margin: 3rem 4rem 4rem 4rem;
+}
+
+@media (max-width: 535px) {
+    .contenedorPrincipal {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .containerImagen {
+        background-image: url(./assets/3.png);
+        background-size: 80rem;
+        background-position: top right;
+        width: 100%;
+        height: 10rem;
+    }
+    .contenedorIconoPausa{
+        display: none;
+    }
+    .contenedorIconos{
+        margin-top: 39rem;
+        margin-left: 40%;
+    }
+    .logo{
+        margin-top: -5rem;
+        height: 6rem;
+    }
+    .footer{
+        margin: 3rem 2rem 4rem 2rem;
+    }
+}
