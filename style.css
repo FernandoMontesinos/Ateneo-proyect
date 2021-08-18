@@ -30,6 +30,7 @@ body {
     background-position: center center;
     max-width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .contenedorIconos {
@@ -49,7 +50,7 @@ body {
     display: flex;
     align-items: flex-end;
     margin-bottom: 1rem;
-    margin-left: 75%;
+    margin-right: 1rem;
 }
 
 .iconoPausa {
