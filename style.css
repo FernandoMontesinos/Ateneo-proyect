@@ -125,17 +125,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .textoLinea {
     font-weight: bold;
     float: left;
+    font-size: 120%;
 }
 
 .linea {
     margin: 0px 20px;
-    width: 13rem;
+    width: 16rem;
     border-top: 1px solid #272727;
     position: relative;
     top: 10px;
