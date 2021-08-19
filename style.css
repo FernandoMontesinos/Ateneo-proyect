@@ -35,14 +35,14 @@ body {
 
 .contenedorIconos {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .iconoImagen {
-    width: 1.5rem;
+    width: 2rem;
     margin-right: .5rem;
 }
 
@@ -54,29 +54,30 @@ body {
 }
 
 .iconoPausa {
-    width: 1rem;
+    width: 1.5rem;
     display: flex;
 }
 
 .containerLogin {
     width: 95%;
-    margin: 1rem;
+    margin: 0 auto;
 }
 
 .logo {
     background-color: #272727;
     border-radius: 1rem;
-    width: 17.5rem;
+    width: 22rem;
+    height: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 12%;
+    margin-bottom: 5rem;
 }
 
 .imagenLogo {
-    width: 15rem;
+    width: 20rem;
     padding: .5rem;
 }
 
@@ -88,12 +89,11 @@ body {
 
 .boton {
     background-color: #ffff;
-    border-radius: 1.5rem;
+    border-radius: 4.5rem;
     align-items: center;
     border: none;
     margin: .5rem;
     width: 70%;
-    height: 3rem;
     display: flex;
     transition: background-color .3s ease-in-out;
 }
@@ -104,15 +104,18 @@ body {
 }
 
 .textoBoton {
-    margin-left: 33%;
+    margin-left: 29%;
     font-family: 'Montserrat', sans-serif;
     color: #272727;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
 }
 
 .imagenGmailBoton,
 .imagenFacebookBoton,
 .imagenemailBoton {
-    width: 2.5rem;
+    width: 4.2rem;
     margin: .3rem;
     display: flex;
     justify-content: flex-start;
@@ -122,6 +125,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .textoLinea {
@@ -131,7 +135,7 @@ body {
 
 .linea {
     margin: 0px 20px;
-    width: 9rem;
+    width: 13rem;
     border-top: 1px solid #272727;
     position: relative;
     top: 10px;
@@ -141,11 +145,11 @@ body {
 .nuevoRegistro {
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: 1.3rem;
     align-items: center;
     justify-content: center;
     column-gap: .5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .registrateAhora {
@@ -159,6 +163,7 @@ body {
     justify-self: center;
     flex-direction: column;
     margin: 3rem 4rem 4rem 4rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 420px) {
@@ -172,29 +177,51 @@ body {
         background-size: 80rem;
         background-position: top right;
         width: 100%;
-        height: 10rem;
+        height: 20%;
     }
     .contenedorIconoPausa{
         display: none;
     }
     .contenedorIconos{
-        margin-top: 170%;
-        margin-left: 40%;
-        margin-bottom: 1rem;
-        max-width: 15rem;
+        margin-top: 190%;
+        margin-left: 30%;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+        width: 20%;
+    }
+    .iconoImagen{
+        margin-right: 40%;
+        width: 40%;
+    }  
+    .imagenLogo{
+        width: 15rem;
     }
     .logo{
         margin-top: -15%;
-        height: 6rem;
+        height: 6.3rem;
+        width: 75%;
+        margin-bottom: 4rem;
     }
     .footer{
         margin: 3rem 2rem 4rem 2rem;
+        font-size: .9rem;
     }
     .nuevoRegistro{
         font-size: .9rem;
     }
     .boton, .separacionLinea{
-        width: 90%;
+        width: 93%;
+        height: 3.5rem;
+    }
+    .textoBoton{
+        font-size: 103%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .imagenGmailBoton,
+    .imagenFacebookBoton,
+    .imagenemailBoton{
+    width: 3rem; 
     }
     html::-webkit-scrollbar {
         display: none;
