@@ -24,21 +24,30 @@ body {
 }
 
 .containerImagen {
-    background-image: url(./assets/10.png);
+    /* background-image: url(./assets/10.png);
     background-color: black;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
     max-width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .contenedorIconos {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 1rem;
     margin-left: 1rem;
+}
+.containerVideo{
+    /* position: absolute; */
+    overflow: hidden;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .iconoImagen {
@@ -47,7 +56,7 @@ body {
 }
 
 .contenedorIconoPausa {
-    display: flex;
+    display: none;
     align-items: flex-end;
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -95,7 +104,23 @@ body {
     margin: .5rem;
     width: 70%;
     display: flex;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    height: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: 3.5rem;
+    background-position: .5rem;
+}
+
+.boton:first-of-type{
+    background-image: url(./assets/gmai.png);
+}
+
+.boton:nth-of-type(2){
+    background-image: url(./assets/facebook.png);
+}
+
+.boton:nth-of-type(3){
+    background-image: url(./assets/mail.png);
 }
 
 .boton:hover{
@@ -104,7 +129,8 @@ body {
 }
 
 .textoBoton {
-    margin-left: 29%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
     color: #272727;
     margin-top: 2%;
@@ -112,19 +138,11 @@ body {
     font-size: 1.4rem;
 }
 
-.imagenGmailBoton,
-.imagenFacebookBoton,
-.imagenemailBoton {
-    width: 4.2rem;
-    margin: .3rem;
-    display: flex;
-    justify-content: flex-start;
-}
-
 .separacionLinea {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
 }
 
 .textoLinea {
@@ -150,10 +168,19 @@ body {
     justify-content: center;
     column-gap: .5rem;
     margin-top: 2rem;
+    font-weight: 700;
 }
 
 .registrateAhora {
     text-decoration: none;
+    color: #3b83bd;
+    transition: color .3s ease-in-out;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.registrateAhora:hover{
+    cursor: pointer;
     color: #00aae4;
 }
 
@@ -162,8 +189,14 @@ body {
     align-items: center;
     justify-self: center;
     flex-direction: column;
-    margin: 3rem 4rem 4rem 4rem;
-    font-size: 1.2rem;
+    margin: 3rem 3rem 4rem 3rem;
+    font-size: 1rem;
+    color: #272727;
+}
+
+.footer-aviso{
+    cursor: pointer;
+    color: black;
 }
 
 @media (max-width: 420px) {
@@ -183,11 +216,11 @@ body {
         display: none;
     }
     .contenedorIconos{
-        margin-top: 190%;
         margin-left: 30%;
-        padding-bottom: 1rem;
-        padding-top: 2rem;
+        padding-bottom: .5rem;
         width: 20%;
+        position: fixed;
+        bottom: 0;
     }
     .iconoImagen{
         margin-right: 40%;
@@ -203,7 +236,7 @@ body {
         margin-bottom: 4rem;
     }
     .footer{
-        margin: 3rem 2rem 4rem 2rem;
+        margin: 3rem 1rem 4rem 1rem;
         font-size: .9rem;
     }
     .nuevoRegistro{
@@ -218,10 +251,9 @@ body {
         margin-top: 0;
         margin-bottom: 0;
     }
-    .imagenGmailBoton,
-    .imagenFacebookBoton,
-    .imagenemailBoton{
-    width: 3rem; 
+    .boton{
+        background-size: 3rem;
+        background-position: .4rem;
     }
     html::-webkit-scrollbar {
         display: none;
