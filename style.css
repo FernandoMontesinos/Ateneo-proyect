@@ -257,8 +257,7 @@ body {
         display: none;
     }
     .iconoImagen{
-        margin-right: 40%;
-        width: 40%;
+        margin-right: 2rem;
     }  
     .imagenLogo{
         width: 15rem;
