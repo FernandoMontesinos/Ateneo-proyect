@@ -4,7 +4,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
+
 }
 
 html::-webkit-scrollbar {
@@ -29,7 +29,7 @@ body {
     z-index: 0;
 }
 
-.contenedorVideo{
+.contenedorVideo {
     z-index: -1;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@ body {
     height: 100%;
 }
 
-#video{
+#video {
     width: 280%;
     height: 100%;
     left: -60%;
@@ -47,7 +47,7 @@ body {
     top: 0;
 }
 
-.placaVideo{
+.placaVideo {
     position: absolute;
     overflow: hidden;
     width: 50%;
@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     margin-left: 1rem;
     z-index: 15;
     /* Para hacerlo mas responsivo*/
@@ -75,8 +75,8 @@ body {
     transition: width .2s ease-in-out;
 }
 
-.iconoImagen:hover{
-   width: 3rem;
+.iconoImagen:hover {
+    width: 3rem;
 }
 
 .contenedorIconoPausa {
@@ -136,21 +136,21 @@ body {
     background-position: .5rem;
 }
 
-.boton:first-of-type{
+.boton:first-of-type {
     background-image: url(./assets/gmai.png);
 }
 
-.boton:nth-of-type(2){
+.boton:nth-of-type(2) {
     background-image: url(./assets/facebook.png);
 }
 
-.boton:nth-of-type(3){
+.boton:nth-of-type(3) {
     background-image: url(./assets/mail.png);
 }
 
-.boton:hover{
-   cursor: pointer;
-   background-color: #cdcdcd;
+.boton:hover {
+    cursor: pointer;
+    background-color: #cdcdcd;
 }
 
 .textoBoton {
@@ -204,7 +204,7 @@ body {
     font-size: 1rem;
 }
 
-.registrateAhora:hover{
+.registrateAhora:hover {
     cursor: pointer;
     color: #00aae4;
 }
@@ -219,12 +219,12 @@ body {
     color: #272727;
 }
 
-.footer-aviso{
+.footer-aviso {
     cursor: pointer;
     color: black;
 }
 
-.contenedorIconosResponsive{
+.contenedorIconosResponsive {
     display: none;
 }
 
@@ -242,60 +242,171 @@ body {
         height: 20%;
         z-index: -2;
     }
-    .contenedorIconoPausa{
+
+    .contenedorIconoPausa {
         display: none;
     }
-    .contenedorIconos{
+
+    .contenedorIconos {
         display: none;
     }
-    .contenedorVideo{
+
+    .contenedorVideo {
         display: none;
     }
-    .placaVideo{
+
+    .placaVideo {
         display: none;
     }
-    .iconoImagen{
+
+    .iconoImagen {
         margin-right: 2rem;
-    }  
-    .imagenLogo{
+    }
+
+    .imagenLogo {
         width: 15rem;
     }
-    .logo{
+
+    .logo {
         margin-top: -15%;
         height: 6.3rem;
         width: 75%;
         margin-bottom: 4rem;
     }
-    .footer{
+
+    .footer {
         margin: 3rem 1rem 4rem 1rem;
         font-size: .9rem;
     }
-    .nuevoRegistro{
+
+    .nuevoRegistro {
         font-size: .9rem;
     }
-    .boton, .separacionLinea{
+
+    .boton,
+    .separacionLinea {
         width: 93%;
         height: 3.5rem;
     }
-    .textoBoton{
+
+    .textoBoton {
         font-size: 103%;
         margin-top: 0;
         margin-bottom: 0;
     }
-    .boton{
+
+    .boton {
         background-size: 3rem;
         background-position: .4rem;
     }
+
     html::-webkit-scrollbar {
         display: none;
     }
-    .contenedorIconosResponsive{
-       display: flex;
-       justify-content: space-evenly;
-       margin: 10%;
+
+    .contenedorIconosResponsive {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10%;
     }
-    .iconoResponsive{
+
+    .iconoResponsive {
         width: 2.4rem;
     }
-    
+}
+
+/* PARTE DEL REGISTRO *************************************************************/
+
+
+.inputsNombreCompleto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inputsdatosRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputRegistronombre {
+    width: 95%;
+    border-radius: 4.5rem;
+    border: none;
+    align-items: center;
+    margin: .5rem;
+    height: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+    background-position: 1.2rem;
+}
+
+.inputRegistronombre:first-of-type{
+    background-image: url(./assets/11.png);
+}
+
+.inputRegistronombre:nth-child(2){
+    background-image: url(./assets/15.png);
+}
+
+.inputRegistro {
+    border-radius: 4.5rem;
+    border: none;
+    align-items: center;
+    margin: .5rem;
+    width: 70%;
+    height: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-position: 1.5rem;
+}
+
+.inputRegistro:first-of-type{
+    background-image: url(./assets/12.png);
+}
+
+.inputRegistro:nth-child(2){  
+    background-image: url(./assets/13.png);
+    background-size: 2rem;
+}
+
+.inputRegistro::-webkit-input-placeholder {
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5rem;
+    color: #272727;
+    font-weight: 600;
+}
+
+.inputRegistronombre::-webkit-input-placeholder {
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5rem;
+    color: #272727;
+    font-weight: 600;
+}
+
+.botonRegistro {
+    border-radius: 4.5rem;
+    border: none;
+    align-items: center;
+    margin: .5rem auto;
+    width: 70%;
+    height: 4.5rem;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: rgb(253, 97, 85);
+    background: -moz-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
+}
+
+.containerBotonRegistro {
+    align-items: center;
+    display: flex;
 }
