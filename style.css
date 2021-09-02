@@ -407,7 +407,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.2rem;
+    width: 60%;
+    margin: 0 auto 1.2rem auto;
+    text-align: center;
 }
 
 .contenedorOlvidaste h1 {
@@ -559,12 +561,15 @@ body {
     }
 
     .contenedorOlvidaste h1 {
-        font-size: .8rem;
+        font-size: .7rem;
         font-weight: 500;
     }
 
     .contenedorOlvidaste h1 span {
         font-size: 1rem;
+    }
+    .contenedorOlvidaste .boldeado{
+        font-size: .7rem;
     }
     /* Page 5*/
     .contenedorTextoListoContraseña{
