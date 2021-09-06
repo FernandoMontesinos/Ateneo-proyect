@@ -249,6 +249,7 @@ body {
 
 .textContenedornav{
     padding: 1.5rem 0 1.5rem 0;
+    cursor: pointer;
 }
 
 .bg-blackStrong{
@@ -257,4 +258,117 @@ body {
 
 .contenedorSectionnav .selected {
    color: #ffdf00;
+}
+
+.contenedorContenido{
+    padding: 3rem;
+    width: 100%;
+    grid-column: 2 / 7;
+}
+
+.contenedorIndicadorSeccion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloSeccion{
+    color: #ffdf00;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagenFotoUsuario{
+    width: 5.5rem;
+}
+
+.headerSeccion{
+    background-color: #1b1b1b;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numeroStrongYellow{
+    color: #ffdf00;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.textLean{
+    font-size: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.strongWhite{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contenedorInicioContenido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    color: #fff;
+}
+
+.contenedorcursosActivos{
+    background-color: #1b1b1b;
+    grid-column: 1 / 2;
+    padding: .7rem;
+}
+
+.titleCursosActivos{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+.seccionesActivos{
+    font-weight: 300;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.nombreCursos{
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.duracionCursos{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.cursoActivo{
+    font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    border-bottom: 3px solid #ffdf00;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.cursoActivo:nth-child(2){
+    margin-bottom: 0 0 0 2.5rem;
+}
+.nombreCurso{
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.duracionCurso{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.graficaLinealCursosActivos{
+    background-color: #1b1b1b;
+    grid-column: 2 / 4;
 }
