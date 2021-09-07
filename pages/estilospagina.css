@@ -35,6 +35,13 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url(../assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: 18rem;
+    background-position-x: 4rem;
+    background-position-y: 4rem;
+    background-size: 15%;
+    padding-top: 6rem;
 }
 
 .textoCursos{
@@ -44,20 +51,25 @@ body {
 
 .iconoAteneoHeader{
     width: 2rem;
+    margin-top: .5rem;
 }
 
 .containerCards{
-    margin: 2rem;
+    margin: 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.cardCurso{
+    width: 100%;
 }
 
 .containerImagenCardCurso > .imagenCurso{
     width: 100%;
-	height: 20rem;
-	object-fit: none;
+	height: 15.5rem;
+	object-fit: cover;
 }
 
 .cardClick{
@@ -66,14 +78,24 @@ body {
 }
 
 .imagenCurso{
-    width: 100%;
     margin-bottom: -1rem;
 }
 
 .textoCurso{
     background-color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.nombreCurso{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: .5rem;
+}
+
+.precioCurso{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contenedorBtnSiguiente{
@@ -82,9 +104,9 @@ body {
 }
 
 .btnSiguiente{
-    border-radius: .7rem;
+    border-radius: .3rem;
     border: none;
-    margin: 2rem;
+    margin: .8rem 4rem;
     width: 15%;
     height: 4.5rem;
     font-family: 'Montserrat', 'sans-serif';
@@ -150,7 +172,7 @@ body {
     width: 100%;
 }
 
-.precioCurso{
+.precioCursoSuscripcion{
     background-color: #1b1b1b;
     padding: 1.5rem;
     display: flex;
@@ -159,7 +181,7 @@ body {
     margin-top: 2rem;
 }
 
-.precioCurso h3{
+.precioCursoSuscripcion h3{
     color: #ffdf00;
     font-weight: 300;
     font-size: 1.75rem;
@@ -363,7 +385,7 @@ body {
 .cursoActivo:nth-child(2){
     margin-bottom: 0 0 0 2.5rem;
 }
-.nombreCurso{
+.nombreCursoInicioPanel{
     font-weight: 300;
     font-size: 1.7rem;
 }
@@ -375,5 +397,5 @@ body {
 .graficaLinealCursosActivos{
     background-color: #1b1b1b;
     grid-column: 2 / 4;
-    padding: .5rem;
+    padding: 2rem;
 }
