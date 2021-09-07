@@ -16,6 +16,7 @@
 
     <!--Animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -63,14 +64,20 @@
                     </div>
                 </div>
                 <div class="graficaLinealCursosActivos">
-
+                    <canvas id="testChart" width="400" height="150"></canvas>
                 </div>
             </div>
         </div> 
-    </div>            
+    </div>  
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--ChartJs - Para los gráficos-->
+    <script src="../js/chart.js"></script>
+    <!-- <script>
+        var myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+      </script> -->
 </body>
 
 

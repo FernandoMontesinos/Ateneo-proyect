@@ -375,4 +375,5 @@ body {
 .graficaLinealCursosActivos{
     background-color: #1b1b1b;
     grid-column: 2 / 4;
+    padding: .5rem;
 }
