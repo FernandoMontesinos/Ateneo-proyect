@@ -238,6 +238,10 @@ body {
     width: 100%;
 }
 
+.contenedorSectionnav a{ 
+    text-decoration: none;
+}
+
 .contenedorSectionnav h1{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
