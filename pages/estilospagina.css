@@ -19,17 +19,17 @@ body {
 
 
 /* Parte de la elección de cursos 6*/
-.contenedorImagenLogo{
+.contenedorImagenLogo {
     display: flex;
     justify-content: flex-start;
 }
 
-.logoAteneo{
+.logoAteneo {
     width: 15%;
     margin: 4rem 0rem 2rem 4rem;
 }
 
-.headerCursosSeleecionar{
+.headerCursosSeleecionar {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -38,75 +38,88 @@ body {
     background-image: url(../assets/logo.png);
     background-repeat: no-repeat;
     background-size: 18rem;
-    background-position-x: 4rem;
-    background-position-y: 4rem;
+    background-position-x: 6rem;
+    background-position-y: 3rem;
     background-size: 15%;
-    padding-top: 6rem;
+    padding-top: 4.5rem;
 }
 
-.textoCursos{
+.textoCursos {
     font-weight: 500;
     font-size: 2.5rem;
 }
 
-.iconoAteneoHeader{
+.iconoAteneoHeader {
     width: 2rem;
     margin-top: .5rem;
 }
 
-.containerCards{
-    margin: 4rem;
+.containerCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
-    row-gap: 3rem;
+    row-gap: 1.8rem;
 }
 
-.cardCurso{
+.cardCurso {
     width: 100%;
 }
 
-.containerImagenCardCurso > .imagenCurso{
+.containerImagenCardCurso>.imagenCursoSeleccion {
     width: 100%;
-	height: 15.5rem;
-	object-fit: cover;
+    height: 12rem;
+    object-fit: cover;
 }
 
-.cardClick{
+.containerImagenCardCurso>.imagenCurso {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.seleccionCurso{
+    margin: 2rem 6rem 1rem 6rem;
+}
+
+.cardClick {
     text-decoration: none;
     color: black;
 }
 
-.imagenCurso{
-    margin-bottom: -1rem;
+.imagenCursoSeleccion {
+    margin-bottom: -.3rem;
 }
 
-.textoCurso{
+.imagenCurso{
+    margin-bottom: -.5rem;
+}
+
+.textoCurso {
     background-color: #fff;
     text-align: center;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.3rem 0 .6rem 0;
 }
 
-.nombreCurso{
+.nombreCurso {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: .5rem;
+    font-size: 1rem;
 }
 
-.precioCurso{
+.precioCurso {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 
-.contenedorBtnSiguiente{
+.contenedorBtnSiguiente {
     display: flex;
     justify-content: flex-end;
 }
 
-.btnSiguiente{
+.btnSiguiente {
     border-radius: .3rem;
     border: none;
-    margin: .8rem 4rem;
+    margin: .5rem 6rem 2rem 0rem ;
     width: 15%;
     height: 4.5rem;
     font-family: 'Montserrat', 'sans-serif';
@@ -125,14 +138,14 @@ body {
 
 
 /* Parte Suscripción curso pantalla 7*/
-.contenedorMain{
+.contenedorMain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 4rem;
     column-gap: 1.5rem;
 }
 
-.descripcionCurso{
+.descripcionCurso {
     background-color: #fff;
     color: #000;
     grid-column: 1 / 3;
@@ -140,39 +153,39 @@ body {
     font-family: 'Montserrat', 'sans-serif';
 }
 
-.tituloprincipaldescripcionCurso{
+.tituloprincipaldescripcionCurso {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.descripcionCursoMain{
+.descripcionCursoMain {
     text-align: center;
     font-weight: 400;
     font-size: 1.4rem;
     margin: .5rem;
 }
 
-.suscripcionCurso{
+.suscripcionCurso {
     grid-column: 3 / 4;
     flex-direction: column;
     display: flex;
     align-items: center;
 }
 
-.contenedorImagenProfesorCurso > .imagenProfesorCurso{
+.contenedorImagenProfesorCurso>.imagenProfesorCurso {
     object-fit: cover;
 }
 
-.imagenProfesorCurso{
-    width: 100%; 
-}
-
-.contenedorOpcionesCurso{
+.imagenProfesorCurso {
     width: 100%;
 }
 
-.precioCursoSuscripcion{
+.contenedorOpcionesCurso {
+    width: 100%;
+}
+
+.precioCursoSuscripcion {
     background-color: #1b1b1b;
     padding: 1.5rem;
     display: flex;
@@ -181,13 +194,13 @@ body {
     margin-top: 2rem;
 }
 
-.precioCursoSuscripcion h3{
+.precioCursoSuscripcion h3 {
     color: #ffdf00;
     font-weight: 300;
     font-size: 1.75rem;
 }
 
-.tiempoSuscripcion{
+.tiempoSuscripcion {
     background-color: #1b1b1b;
     padding: 1.5rem;
     display: flex;
@@ -196,7 +209,7 @@ body {
     margin-top: 2rem;
 }
 
-.tiempoSuscripcionCurso{
+.tiempoSuscripcionCurso {
     color: #ffdf00;
     font-weight: 300;
     font-size: 1.75rem;
@@ -205,11 +218,11 @@ body {
     font-family: 'Montserrat', 'sans-serif';
 }
 
-.contenedorBtnSuscribirme{
+.contenedorBtnSuscribirme {
     width: 100%;
 }
 
-.btnSuscribirme{
+.btnSuscribirme {
     border-radius: .2rem;
     border: none;
     margin-top: 2rem;
@@ -231,23 +244,23 @@ body {
 
 /*Parte del panel 8 */
 
-.contenedorPrincipal{
+.contenedorPrincipal {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
 
-.navegacionDivision{
+.navegacionDivision {
     border-right: .45rem solid #1b1b1b;
     height: 100vh;
     grid-column: 1 / 2;
 }
 
-.logoNavegacion{
+.logoNavegacion {
     margin: 4rem 3rem 4rem 3rem;
     width: 17rem;
 }
 
-.contenedorSecciones{
+.contenedorSecciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,15 +269,15 @@ body {
     margin: 3rem 0 3rem 0;
 }
 
-.contenedorSectionnav{
+.contenedorSectionnav {
     width: 100%;
 }
 
-.contenedorSectionnav a{ 
+.contenedorSectionnav a {
     text-decoration: none;
 }
 
-.contenedorSectionnav h1{
+.contenedorSectionnav h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -273,41 +286,41 @@ body {
     font-size: 1.7rem;
 }
 
-.textContenedornav{
+.textContenedornav {
     padding: 1.5rem 0 1.5rem 0;
     cursor: pointer;
 }
 
-.bg-blackStrong{
+.bg-blackStrong {
     background-color: #1b1b1b;
 }
 
 .contenedorSectionnav .selected {
-   color: #ffdf00;
+    color: #ffdf00;
 }
 
-.contenedorContenido{
+.contenedorContenido {
     padding: 3rem;
     width: 100%;
     grid-column: 2 / 7;
 }
 
-.contenedorIndicadorSeccion{
+.contenedorIndicadorSeccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.tituloSeccion{
+.tituloSeccion {
     color: #ffdf00;
     font-family: 'Montserrat', sans-serif;
 }
 
-.imagenFotoUsuario{
+.imagenFotoUsuario {
     width: 5.5rem;
 }
 
-.headerSeccion{
+.headerSeccion {
     background-color: #1b1b1b;
     margin: 2rem 0 2rem 0;
     text-align: center;
@@ -318,44 +331,44 @@ body {
     align-items: center;
 }
 
-.numeroStrongYellow{
+.numeroStrongYellow {
     color: #ffdf00;
     font-size: 5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
-.textLean{
+.textLean {
     font-size: 2rem;
     margin: 0 1rem 0 1rem;
 }
 
-.strongWhite{
+.strongWhite {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.contenedorInicioContenido{
+.contenedorInicioContenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
     color: #fff;
 }
 
-.contenedorcursosActivos{
+.contenedorcursosActivos {
     background-color: #1b1b1b;
     grid-column: 1 / 2;
     padding: .7rem;
 }
 
-.titleCursosActivos{
+.titleCursosActivos {
     text-align: center;
     font-weight: 300;
     font-size: 1.7rem;
     margin: 1rem;
 }
 
-.seccionesActivos{
+.seccionesActivos {
     font-weight: 300;
     justify-content: space-between;
     display: flex;
@@ -363,16 +376,17 @@ body {
     margin: 1rem 0 1rem 0;
 }
 
-.nombreCursos{
+.nombreCursos {
     font-weight: 300;
     font-size: 1.7rem;
 }
-.duracionCursos{
+
+.duracionCursos {
     font-size: 1.7rem;
     font-weight: 500;
 }
 
-.cursoActivo{
+.cursoActivo {
     font-weight: 300;
     justify-content: space-between;
     align-items: center;
@@ -382,20 +396,177 @@ body {
     padding: 1.5rem 0 1.5rem 0;
 }
 
-.cursoActivo:nth-child(2){
+.cursoActivo:nth-child(2) {
     margin-bottom: 0 0 0 2.5rem;
 }
-.nombreCursoInicioPanel{
+
+.nombreCursoInicioPanel {
     font-weight: 300;
     font-size: 1.7rem;
 }
-.duracionCurso{
+
+.duracionCurso {
     font-size: 1.7rem;
     font-weight: 500;
 }
 
-.graficaLinealCursosActivos{
+.graficaLinealCursosActivos {
     background-color: #1b1b1b;
     grid-column: 2 / 4;
     padding: 2rem;
+}
+
+
+/* Parte de HISTORIAL DE PAGOS 9*/
+
+
+
+/*Parte de Cursos activos 10*/
+.btnSiguienteCursosActivos {
+    border-radius: .3rem;
+    border: none;
+    margin: 1.8rem 0rem 0rem 0rem;
+    width: 25%;
+    height: 4.5rem;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background: rgb(253, 97, 85);
+    background: -moz-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+/*Parte de examenes cursos 11*/
+
+.containerCardsExamenesCurso{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin: 8.5rem 0rem 1rem;
+}
+
+.cardExamenCuro{
+    background-color: #fff;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../assets/bgexa.png);
+    background-position: top right;
+    background-size: 35rem;
+    background-repeat: no-repeat;
+}
+
+
+.cardExamenCuro h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/*Parte de mi progreso 12*/
+
+.progresoGraficoLinealCurso{
+    background-color: #1b1b1b;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.contenedorTabla{
+    margin-top: 1.5rem;
+    width: 100%;
+    color: #fff;
+}
+
+.tablaProgreso{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tablaProgreso tr{
+    height: 3.5rem;
+}
+.tablaProgreso tr th{
+    font-weight: 300;
+    color: #ffdf00;
+    font-size: 1.25rem;
+}
+
+.tablaProgreso .bg-black-lean{
+    background-color: #1b1b1b;
+}
+.tablaProgreso .bg-black-strong{
+    background-color: #141313;
+}
+
+/* Parte de examen aleatorio 13*/
+.contenedorTemasSubcategoria{
+    background-color: #1b1b1b;
+    color: #fff;
+    margin-top: 3.5rem;
+}
+
+.leyendaTodos h1 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 2rem;
+    display: flex;
+}
+
+.BoxAmarillo{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #ffdf00;
+    margin: .2rem .8rem 0 .2rem;
+}
+
+.contenedorSubcategoria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.ColumnaSubcategoria h2{
+    margin: 1.5rem 0;
+    font-weight: 400;
+    color: #ffdf00;
+}
+
+.ColumnaSubcategoria h1{
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin: 2rem 0;
+}
+
+.ColumnaSubcategoria input{
+    transform: scale(1.3);
+    margin: .5rem;
+}
+.btnHacerTest{
+    border-radius: .3rem;
+    border: none;
+    margin: 1rem 3rem 3rem 3rem;
+    width: 23%;
+    height: 4.5rem;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background: rgb(253, 97, 85);
+    background: -moz-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 }

@@ -27,52 +27,58 @@
             </div>
             <div class="contenedorSecciones">
                 <div class="contenedorInicio contenedorSectionnav">
-                    <a href="./8.html"><h1 class="textContenedornav bg-blackStrong selected">INICIO</h1></a>
+                    <a href="./8.html">
+                        <h1 class="textContenedornav bg-blackStrong">INICIO</h1>
+                    </a>
                 </div>
                 <div class="contenedornavCursos contenedorSectionnav">
-                    <a href="./10.html"><h1 class="textContenedornav">MIS CURSOS</h1></a>
+                    <a href="./10.html">
+                        <h1 class="textContenedornav">MIS CURSOS</h1>
+                    </a>
                 </div>
                 <div class="contenedornavpagos contenedorSectionnav">
-                    <a href="./9.html"><h1 class="textContenedornav bg-blackStrong">HISTORIAL DE PAGOS</h1></a>
+                    <a href="./9.html">
+                        <h1 class="textContenedornav bg-blackStrong">HISTORIAL DE PAGOS</h1>
+                    </a>
                 </div>
-            </div>      
+            </div>
         </div>
         <div class="contenedorContenido">
             <div class="contenedorIndicadorSeccion">
-                <h1 class="tituloSeccion">INICIO</h1>
+                <h1 class="tituloSeccion">MI PROGRESO</h1>
                 <img src="../assets/19.png" alt="imagenFotoUsuario" class="imagenFotoUsuario">
             </div>
-            <div class="headerSeccion">
-                <span class="numeroStrongYellow">70</span>
-                <span class="textLean">Test</span>
-                <span class="strongWhite"> Realizados</span>
+            <div class="progresoGraficoLinealCurso">
+                <canvas id="testChart" width="400" height="65"></canvas>
             </div>
-            <div class="contenedorInicioContenido">
-                <div class="contenedorcursosActivos">
-                    <h3 class="titleCursosActivos">Cursos Activos</h3>
-                    <div class="seccionesActivos">
-                        <h3 class="nombreCursos">Curso</h3>
-                        <h3 class="duracionCursos">Hasta</h3>
-                    </div>
-                    <div class="cursoActivo">
-                        <h3 class="nombreCursoInicioPanel">Guardia Civil</h3> 
-                        <h3 class="duracionCurso">12/2/21</h3> 
-                    </div>
-                    <div class="cursoActivo">
-                        <h3 class="nombreCursoInicioPanel">Policia nacional</h3> 
-                        <h3 class="duracionCurso">12/2/21</h3> 
-                    </div>
-                </div>
-                <div class="graficaLinealCursosActivos">
-                    <canvas id="testChart" width="400" height="150"></canvas>
-                </div>
+            <div class="contenedorTabla">
+                <table class="tablaProgreso">
+                    <tr class="bg-black-lean">
+                        <th>Subcategoría</th>
+                        <th>Fallos</th>
+                    </tr>
+                    <tr class="bg-black-strong">
+                        <td>T1</td>
+                        <td>3 de 30 tests(10%)</td>
+                    </tr>
+                    <tr class="bg-black-lean">
+                        <td>T2</td>
+                        <td>3 de 30 tests(10%)</td>
+                    </tr>
+                    <tr class="bg-black-strong">
+                        <td>T3</td>
+                        <td>3 de 30 tests(10%)</td>
+                    </tr>
+                    <tr class="bg-black-lean">
+                        <td>T4</td>
+                        <td>3 de 30 tests(10%)</td>
+                    </tr>
+                </table>
             </div>
-        </div> 
-    </div>  
-    
-    <!--ChartJs - Para los gráficos-->
-    <script src="../js/chartInicio.js"></script>
+        </div>    
+    </div>
+
+
+    <script src="../js/chartCurso.js"></script>
 </body>
-
-
 </html>
