@@ -419,6 +419,105 @@ body {
 
 /* Parte de HISTORIAL DE PAGOS 9*/
 
+.manaejodehistorial {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.mostrarResultados h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.MsgResultados {
+    font-size: 1.2rem;
+}
+
+.buscadorHistorialPagos {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 2.5rem;
+}
+
+.iconoBuscar {
+    background: rgb(253, 97, 85);
+    background: -moz-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    padding: .5rem;
+    cursor: pointer;
+    width: 3rem;
+}
+
+.buscarPagosInput {
+    width: 20rem;
+    border: none;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.buscarPagosInput::placeholder {
+    color: #000;
+}
+.font-white{
+    color: #fff;
+}
+.tablaHistorialPagos{
+    background-color: #1b1b1b;
+    height: 21rem;
+}
+.btnImprimir{
+    border: none;
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffdf00;
+    cursor: pointer;
+}
+
+.footerHistorial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.resultadosMostrados h1 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.paginacionHistorial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonPaginacion{
+    width: 2.2rem;
+    font-size: 1rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+}
+.paginacionHistorial img {
+    width: 1rem;
+    margin: 2rem .5rem 1rem .5rem;
+    cursor: pointer;
+}
+
+
+
 
 
 /*Parte de Cursos activos 10*/
@@ -579,43 +678,43 @@ body {
 
 /* PARTE DE EXAMEN TEMA 15*/
 
-.msgSalir{
+.msgSalir {
     margin: 1.5rem;
 }
 
-.msgSalir h1{
+.msgSalir h1 {
     font-weight: 300;
     color: #fff;
     font-size: 1.5rem;
 }
 
-.msgSalir a{
+.msgSalir a {
     text-decoration: none;
 }
 
-.contenedorlogoAteneoExamenTema{
+.contenedorlogoAteneoExamenTema {
     display: flex;
     justify-content: flex-end;
 }
 
-.logoAteneoExamenTema{
+.logoAteneoExamenTema {
     width: 15rem;
     margin: -1rem 5rem 0 2rem;
 }
 
-.examentematituloSeccion{
-    margin: 0rem 0rem 4rem 5rem; 
+.examentematituloSeccion {
+    margin: 0rem 0rem 4rem 5rem;
 }
 
 .ContenedorbarraProgreso {
     margin: 2rem 5rem 2rem 5rem;
 }
 
-.ContenedorbarraProgreso h1{
-   font-weight: 300;
-   font-size: 1.3rem;
-   color: #fff;
-   margin: 1rem 0rem 1rem 0rem;
+.ContenedorbarraProgreso h1 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 .barraProgreso {
@@ -637,26 +736,31 @@ body {
 }
 
 @keyframes load {
-    0% { width: 0; }
-    100% { width: 50%; }
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
 }
 
-.contenedorPregunta{
+.contenedorPregunta {
     margin: .5rem 5rem;
 }
 
-.contenedorPregunta .numeroPregunta{
+.contenedorPregunta .numeroPregunta {
     color: #ffdf00;
     font-weight: 300;
     font-size: 1.2rem;
 }
 
-.contenedorContenidoPregunta{
+.contenedorContenidoPregunta {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.contenedorFoto{
+.contenedorFoto {
     margin: 3rem 3rem 3rem 0rem;
     display: flex;
     justify-content: center;
@@ -665,28 +769,28 @@ body {
     background-color: #fff;
 }
 
-.foto h1{
-    color: #9b9b9b ;
+.foto h1 {
+    color: #9b9b9b;
 }
 
-.contenedorPreguntayRespuesta{
+.contenedorPreguntayRespuesta {
     grid-column: 2 / 4;
     padding: 3rem;
 }
 
-.contenedorTextoPregunta h1{
+.contenedorTextoPregunta h1 {
     color: #fff;
     font-weight: 300;
     font-size: 1.25rem;
 }
 
-.alternativasPreguntas{
+.alternativasPreguntas {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.alternativasPreguntas h1{
+.alternativasPreguntas h1 {
     color: #fff;
     font-weight: 300;
     font-size: 1.25rem;
@@ -694,39 +798,50 @@ body {
     flex-direction: row;
     align-items: center;
 }
-.alternativaPreguntaIcono{
+
+.alternativaPreguntaIcono {
     margin: 2rem .5rem 1rem 0rem;
 }
 
-.alternativaPreguntaIcono span{
+.alternativaPreguntaIcono span {
     background-color: #1b1b1b;
     padding: 1rem;
     border-radius: 55rem;
 }
 
-.contenedornumeroPreguntas{
+.contenedornumeroPreguntas {
     border-top: .45rem solid #1b1b1b;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-.numeroPregunaIcono{
+.numeroPregunaIcono {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    align-items: center;  
+    align-items: center;
 }
 
-.Preguntagreen span{
-    background-color: greenyellow;
+.Preguntagreen span {
+    background-color: #8cc63f;
     border-radius: 120rem;
     padding: 1rem;
     height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
 }
 
-.Preguntared span{
-    background-color: red;
+.Preguntared span {
+    background: rgb(253, 97, 85);
+    background: -moz-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
     border-radius: 120rem;
     padding: 1rem;
     height: 2.5rem;
+    display: flex;
+    align-items: center;
 }
+

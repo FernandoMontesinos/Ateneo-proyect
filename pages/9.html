@@ -12,7 +12,8 @@
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!--Animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,15 +27,21 @@
             </div>
             <div class="contenedorSecciones">
                 <div class="contenedorInicio contenedorSectionnav">
-                    <a href="./8.html"><h1 class="textContenedornav bg-blackStrong">INICIO</h1></a>
+                    <a href="./8.html">
+                        <h1 class="textContenedornav bg-blackStrong">INICIO</h1>
+                    </a>
                 </div>
                 <div class="contenedornavCursos contenedorSectionnav">
-                    <a href="./10.html"><h1 class="textContenedornav">MIS CURSOS</h1></a>
+                    <a href="./10.html">
+                        <h1 class="textContenedornav">MIS CURSOS</h1>
+                    </a>
                 </div>
                 <div class="contenedornavpagos contenedorSectionnav">
-                    <a href="./9.html"><h1 class="textContenedornav bg-blackStrong selected">HISTORIAL DE PAGOS</h1></a>
+                    <a href="./9.html">
+                        <h1 class="textContenedornav bg-blackStrong selected">HISTORIAL DE PAGOS</h1>
+                    </a>
                 </div>
-            </div>      
+            </div>
         </div>
         <div class="contenedorContenido">
             <div class="contenedorIndicadorSeccion">
@@ -46,9 +53,63 @@
                 <span class="textLean">Pagos</span>
                 <span class="strongWhite"> Realizados</span>
             </div>
+            <div class="contenedorHistorialdePagos">
+                <div class="manaejodehistorial">
+                    <div class="mostrarResultados">
+                        <h1>Mostrando hasta <select name="mostrarResultados" class="MsgResultados">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select> resultados</h1>
+                    </div>
+                    <div class="buscadorHistorialPagos">
+                        <input type="text" class="buscarPagosInput" placeholder="Buscar">
+                        <img src="../assets/23.png" alt="iconoBuscar" class="iconoBuscar">
+                    </div>
+                </div>    
+                <div class="tablaHistorialPagos">
+                    <table class="tablaProgreso font-white">
+                        <tr class="bg-black-strong">
+                            <th>#</th>
+                            <th>Curso</th>
+                            <th>Precio</th>
+                            <th>Fecha de Pago</th>
+                            <th>Fecha de caducidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr class="bg-black-lean">
+                            <td>1</td>
+                            <td>Guarcia Civil</td>
+                            <td>30</td>
+                            <td>12/10/2021 10:30:12</td>
+                            <td>12/10/2021 10:30:12</td>
+                            <td><input type="button" value="Imprimir" class="btnImprimir"></td>
+                        </tr>
+                        <tr class="bg-black-strong">
+                            <td>1</td>
+                            <td>Guarcia Civil</td>
+                            <td>30</td>
+                            <td>12/10/2021 10:30:12</td>
+                            <td>12/10/2021 10:30:12</td>
+                            <td><input type="button" value="Imprimir" class="btnImprimir"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footerHistorial">
+                    <div class="resultadosMostrados">
+                        <h1>Mostrando 10 resultados de 200</h1>
+                    </div>
+                    <div class="paginacionHistorial">
+                        <img src="../assets/22.png" alt="flechaIzquierda" class="flechaIzquierda">
+                        <button class="botonPaginacion">1</button>
+                        <button class="botonPaginacion">2</button>
+                        <img src="../assets/21.png" alt="flechaDerecha" class="flechaDerecha">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-</body> 
+
+</body>
 
 </html>
