@@ -25,6 +25,7 @@ const data = {
 const config = {
     type: 'line',
     data: data,
+    responsive: true,
     options: {
         plugins: {
             legend: {

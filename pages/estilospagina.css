@@ -277,6 +277,10 @@ body {
 .contenedorSectionnav a {
     text-decoration: none;
 }
+.contenedorInfoInicio{
+    display: flex;
+    align-items: center;
+}
 
 .contenedorSectionnav h1 {
     text-align: center;
@@ -830,12 +834,15 @@ body {
     align-items: center;
 }
 
-
 /* RESPONSIVE DESGING*/
 
-
-
 .headerResponsive{
+    display: none;
+}
+.imagenFotoUsuarioResponsive{
+    display: none;
+}
+.contenedorcursosActivosResponsive{
     display: none;
 }
 
@@ -853,14 +860,23 @@ body {
         width: 100%;
         z-index: 1;
     }
+    .nombreSeccion{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .iconosControl{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+        margin-right: .35rem;
     }
     .iconosControl img{
         width: 1.5rem;
+    }
+    .iconoAtras{
+        margin-right: .25rem;
     }
     .logoAteneoResponsive{
        display: flex;
@@ -919,9 +935,10 @@ body {
     .suscripcionCurso{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: .5rem;
     }
     .imagenProfesorCurso{
-        width: 7.8rem;
+        width: 100%;
     }
     .contenedorOpcionesCurso{
        margin-top: -1.7rem;
@@ -950,6 +967,86 @@ body {
         font-size: .75rem;
     }
     .descripcionCursoMain{
-        font-size: .5rem;
+        font-size: .7rem;
+    }
+    /*Pantalla número 8*/
+    .contenedorPrincipal{
+        display: block;
+    }
+    .navegacionDivision{
+        display: none;
+    }
+    .contenedorContenido{
+        padding: 1rem;
+    }
+    .tituloSeccion{
+        display: none;
+    }
+    .imagenFotoUsuario{
+        display: none;
+    }
+    .imagenFotoUsuarioResponsive{
+        display: block;
+        width: 4rem;
+    }
+    .headerSeccion{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .contenedorInfoInicio{
+        display: flex;
+        flex-direction: row;
+    }
+    .numeroStrongYellow{
+        font-size: 2rem;
+        margin-right: .5rem;
+    }
+    .contenedoTextoInfoInicio{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .contenedoTextoInfoInicio span{
+        font-size: .8rem;
+        text-align: left;
+        margin: 0;
+    }
+    .contenedorcursosActivos{
+        display: none;
+    }
+    .contenedorcursosActivosResponsive{
+        background-color: #1b1b1b;
+        padding: .5rem;
+        display: block;
+        color: #fff;
+    }
+    .contenedorcursosActivosResponsive h3{
+        font-size: .65rem;
+    }
+    .headerResponsiveContenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.6rem;
+    }
+    .cursoActivo{
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    .seccionesActivos{
+        margin: 0;
+    }
+    .contenedorInicioContenido{
+        display: block;
+    }
+    .graficaLinealCursosActivos{
+        margin-top: 1rem;
+        padding: 0;
+        width: 100%;
+    }
+    .graficaLinealCursosActivos canvas{
+        height: 1150px;
     }
 }
