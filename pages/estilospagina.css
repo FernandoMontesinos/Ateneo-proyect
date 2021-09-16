@@ -845,6 +845,9 @@ body {
 .contenedorcursosActivosResponsive{
     display: none;
 }
+.responsive{
+    display: none;
+}
 
 @media (max-width: 500px) {
     /*Pantalla número 6 */
@@ -906,7 +909,7 @@ body {
         margin: 1rem 2rem 1rem 2rem;
     }
     .containerImagenCardCurso>.imagenCursoSeleccion{
-        height: 6rem;
+        height: 4rem;
     }
     .textoCurso{
         padding: 0.3rem 0 0.6rem 0;
@@ -1048,5 +1051,93 @@ body {
     }
     .graficaLinealCursosActivos canvas{
         height: 1150px;
+    }
+    /*Pantalla número 9 */
+    .contenedorHistorialdePagos h1{
+        font-size: .65rem;
+    }
+    /* Pantalla número 10*/
+    .no-responsive{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 1.2rem;
+    }
+    .containerImagenCardCurso>.imagenCurso{
+        height: 4.5rem;
+    }
+    .btnSiguienteCursosActivos{
+        width: 10rem;
+        font-size: .9rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    /* Pantalla número 11*/
+    .containerCardsExamenesCurso{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;    
+    }
+    .cardExamenCuro{
+        width: 100%;
+        height: 6rem;
+        background-size: 12rem;
+    }
+    .cardExamenCuro h1{
+        font-size: .8rem;
+    }
+    .directionColum h2 {
+        font-size: .8rem;
+    }
+    .directionColum{
+        color: #000;
+    }
+    /*Pantalla número 12*/
+    .progresoGraficoLinealCurso{
+        margin: 0;
+        padding: 0;
+    } 
+    .contenedorTabla{
+        font-size: .75rem;
+    } 
+    .tablaProgreso tr th{
+        font-size: .85rem;
+    }
+    /*Pantalla número 13*/
+    .contenedorTemasSubcategoria{
+        margin: 0;
+        font-size: .65rem;
+    }
+    .leyendaTodos h1{
+        font-size: .85rem;
+    }
+    .BoxAmarillo{
+        width: .8rem;
+        height: .8rem;
+    }
+    .contenedorSubcategoria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 0rem 0 2rem;
+    }
+    .ColumnaSubcategoria h1{
+        font-size: .95rem;
+        margin: 1rem 0;
+    }
+    .ColumnaSubcategoria input{
+        transform: scale(1);
+    }
+    .btnHacerTest{
+        width: 10rem;
+        font-size: .9rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
     }
 }
