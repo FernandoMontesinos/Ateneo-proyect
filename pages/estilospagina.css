@@ -877,6 +877,11 @@ body {
 }
 
 @media (max-width: 500px) {
+    /*menu hamburguesa*/
+    .iconoMenu{
+        width: 1.5rem;
+        margin-top: -2rem;
+    }
 
     /*Pantalla número 6 */
     .headerCursosSeleecionar {
