@@ -23,7 +23,7 @@
     <div class="contenedorPrincipal">
         <div class="headerResponsive">
             <div class="iconosControl">
-                <div class="nombreSeccion"><img src="../assets/flecha.png" alt="iconoAtras" class="iconoAtras"><span>Inicio</span></div>
+                <div class="nombreSeccion"><img src="../assets/flecha.png" alt="iconoAtras" class="iconoAtras"><span>Historial de pagos</span></div>
                 <img src="../assets/27.png" alt="iconoBuscar">
             </div>
             <div class="logoAteneoResponsive">
@@ -63,9 +63,9 @@
                         <img src="../assets/19.png" alt="imagenFotoUsuario" class="imagenFotoUsuarioResponsive">
                     </div>
                     <div class="contenedorInfoInicio">
-                        <span class="numeroStrongYellow">70</span>
+                        <span class="numeroStrongYellow">3</span>
                         <div class="contenedoTextoInfoInicio">
-                            <span class="textLean">Test</span>
+                            <span class="textLean">Pagos</span>
                             <span class="strongWhite"> Realizados</span>
                         </div>
                     </div>
@@ -108,7 +108,8 @@
                             <th>Precio</th>
                             <th>Fecha de Pago</th>
                             <th>Fecha de caducidad</th>
-                            <th>Acciones</th>
+                            <th class="responsive">.</th>
+                            <th class="no-responsive">Acciones</th>
                         </tr>
                         <tr class="bg-black-lean">
                             <td>1</td>
@@ -116,7 +117,8 @@
                             <td>30</td>
                             <td>12/10/2021 10:30:12</td>
                             <td>12/10/2021 10:30:12</td>
-                            <td><input type="button" value="Imprimir" class="btnImprimir"></td>
+                            <td class=" responsive"><img src="../assets/impresora.png" alt="iconoImprimir" class="iconoImprimir"></td>
+                            <td><input type="button" value="Imprimir" class="btnImprimir no-responsive"></td>
                         </tr>
                         <tr class="bg-black-strong">
                             <td>1</td>
@@ -124,12 +126,16 @@
                             <td>30</td>
                             <td>12/10/2021 10:30:12</td>
                             <td>12/10/2021 10:30:12</td>
-                            <td><input type="button" value="Imprimir" class="btnImprimir"></td>
+                            <td class=" responsive"><img src="../assets/impresora.png" alt="iconoImprimir" class="iconoImprimir responsive"></td>
+                            <td><input type="button" value="Imprimir" class="btnImprimir no-responsive"></td>
                         </tr>
                     </table>
+                    <div class="resultadosMostrados responsiveMostrarResultados">
+                        <h1>Mostrando 10 resultados de 200</h1>
+                    </div>
                 </div>
                 <div class="footerHistorial">
-                    <div class="resultadosMostrados">
+                    <div class="resultadosMostrados no-responsive">
                         <h1>Mostrando 10 resultados de 200</h1>
                     </div>
                     <div class="paginacionHistorial">
