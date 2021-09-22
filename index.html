@@ -1,76 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teneo</title>
-    <link href="./assets/icono.ico" rel="icon">
-    <!--Syles css-->
-    <link rel="stylesheet" href="style.css">
-    <!--Fuente-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <!--Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Teneo</title>
+      <link href="./assets/icono.ico" rel="icon">
+      <!--Syles css-->
+      <link rel="stylesheet" href="style.css">
+      <!--Fuente-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+      <!--Animate css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
 
-<body>
-    <div class="contenedorPrincipal">
-        <div class="containerImagen">
-            <!--Contenedor del video-->
-            <div class="contenedorVideo">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XWw1a0JZ_HU?loop=1&controls=0&autoplay=1&mute=1&showinfo=0&playlist=XWw1a0JZ_HU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="placaVideo"></div>
-            <div class="contenedorIconos">
-                <a href="https://facebook.com"><img src="./assets/9.png" alt="iconoFB" class="iconoImagen"></a>
-                <a href="https://instagram.com"> <img src="./assets/8.png" alt="iconoInsta" class="iconoImagen"></a>
-                <a href="https://youtube.com"><img src="./assets/7.png" alt="iconoYoutube" class="iconoImagen"></a>  
-            </div>
-            <div class="contenedorIconoPausa">
-                <img src="./assets/1.png" alt="iconoPausa" class="iconoPausa">
-            </div>
-            
-        </div>
-        <div class="containerLogin">
-            <div class="logo">
-                <img class="imagenLogo" src="./assets/logo.png" alt="imagenlogoTeneo">
-            </div>
-            <div class="botones">
-                <button class="boton">
-                    <h4 class="textoBoton">Gmail</h4>
-                </button>
-                <button class="boton">
-                    <h4 class="textoBoton">Facebook</h4>
-                </button>
-                <div class="separacionLinea">
-                    <div class="linea">&nbsp;</div>
-                    <div class="textoLinea">o</div>
-                    <div class="linea">&nbsp;</div>
+  <body>
+      <div class="contenedorPrincipal">
+          <div class="containerImagen">
+              <!--Contenedor del video-->
+              <div class="contenedorVideo">
+                  <iframe id="video" width="560" height="315"
+                      src="https://www.youtube.com/embed/XWw1a0JZ_HU?loop=1&controls=0&autoplay=1&mute=1&showinfo=0&playlist=XWw1a0JZ_HU"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+              </div>
+              <div class="placaVideo"></div>
+              <div class="contenedorIconos">
+                  <a href="https://facebook.com"><img src="./assets/9.png" alt="iconoFB" class="iconoImagen"></a>
+                  <a href="https://instagram.com"> <img src="./assets/8.png" alt="iconoInsta" class="iconoImagen"></a>
+                  <a href="https://youtube.com"><img src="./assets/7.png" alt="iconoYoutube" class="iconoImagen"></a>
+              </div>
+              <div class="contenedorIconoPausa">
+                  <img src="./assets/1.png" alt="iconoPausa" class="iconoPausa">
+              </div>
+
+          </div>
+          <div class="headerResponsive">
+              <div class="logo">
+                  <img class="imagenLogo" src="./assets/logo.png" alt="imagenlogoTeneo">
+              </div>
+          </div>
+          <div class="containerLogin">
+              <div class="logo">
+                  <img class="imagenLogo" src="./assets/logo.png" alt="imagenlogoTeneo">
+              </div>
+              <div class="botones">
+                  <button class="boton">
+                      <h4 class="textoBoton">Gmail</h4>
+                  </button>
+                  <button class="boton">
+                      <h4 class="textoBoton">Facebook</h4>
+                  </button>
+                  <div class="separacionLinea">
+                      <div class="linea">&nbsp;</div>
+                      <div class="textoLinea">o</div>
+                      <div class="linea">&nbsp;</div>
+                  </div>
+                  <button class="boton">
+                      <h4 class="textoBoton">E-Mail</h4>
+                  </button>
+              </div>
+              <div class="nuevoRegistro">
+                  <h5>¿Todavía no tienes cuenta?</h5><a href="public/2.html" class="registrateAhora">Regístrate
+                      Ahora</a>
+              </div>
+
+              <div class="footer">
+                  <h6>Al acceder, aceptas el <span class="footer-aviso">Aviso legal</span></h6>
+                  <h6>la <span class="footer-aviso">Política de privacidad </span>y el <span class="footer-aviso">Uso de
+                          cookies de OneUP</span> </h6>
+              </div>
+              <!--Imagenes Gobierno-->
+              <div class="row-imagenesGobierno">
+                  <div class="col-md-4 pb-5 text-center"><img style="margin: 0rem auto; display: flex;"
+                          class="img-fluid"
+                          src="http://intranet.desguacejuany.com/assets/images/footer/Canarias-avanza-con-europa.png">
+                  </div>
+                  <div class="col-md-4 pb-5 text-center" style="align-items: center;
+                  display: flex;">
+                      <a href="http://www.gobiernodecanarias.org/hacienda/dgplani/fondos_europeos">
+                          <img style="margin: 1rem auto; display: flex;" class="img-fluid"
+                              src="http://intranet.desguacejuany.com/assets/images/footer/Union-Europea-subvencion.png">
+                      </a>
+                  </div>
+                  <div class="col-md-4 pb-5 text-center">
+                      <a href="http://www.gobiernodecanarias.org/hacienda/dgplani/fondos_europeos">
+                          <img style="margin: 0 auto; display: flex; margin-bottom: 2rem;" class="img-fluid"
+                              src="http://intranet.desguacejuany.com/assets/images/footer/ACIISI.png">
+                      </a>
+                  </div>
+              </div>
+              <!--Bonos de la transformación-->
+              <div class="contenedorBonosTransformacion">
+                  <h1 class="textBonos">Bonos de la transformación</h1>
+              </div>
+                <div class="ventanaModal">
+                <div class="popup" id="popup">
+                    <div class="contenedorBotonCerrar">
+                        <input type="button" value="X" class="btn-cerrar-popup">
+                    </div>
+                    <h1 class="informacion"> Centro Ateneo ha sido beneficiaria de la subvención Bonos para la
+                        transformación digital de la empresa canaria para el ejercicio 2020, motivada por la crisis
+                        sanitaria de la COVID-19. Gracias al Programa Operativo FEDER de Canarias 2014-2020, la empresa
+                        Centro Ateneo ha podido adaptarse a las nuevas tecnologías pudiendo de esta manera salvaguardar
+                        los problemas ocasionados por la crisis de la COVID-19, teniendo como principales objetivos de
+                        este proyecto los siguientes:
+                        Disponer de una plataforma propia en la que trabajar y realizar test por parte de los alumnos;
+                        Disponer de un módulo dentro de esta plataforma para facilitar el teletrabajo de nuestros
+                        profesores; Proveer a nuestros profesores de equipos para realizar el teletrabajo; Disponer de un
+                        servidor en la nube que facilite la conectividad de la plataforma y de los datos; Hacer esta
+                        plataforma seguridad mediante protocolos IDS; Adaptarnos a una nueva forma de trabajo en la que la
+                        presencialidad no existe o está limitada; Aprovechar y pivotar la estrategia de la empresa de la
+                        mano de las nuevas tecnologías; Todo esto ha derivado en una mejora de los procesos de la entidad,
+                        una mejor adaptación al entorno actual y, en definitiva, la consecución de los objetivos
+                        planteados en el proyecto.
+                        <a href="http://ateneo.limidata.com/cartel.pdf" class="enlaceCartelAteneo">Cartel centro Ateneo</a>
+                    </h1>
                 </div>
-                <button class="boton">
-                    <h4 class="textoBoton">E-Mail</h4>
-                </button>
-            </div>
-            <div class="nuevoRegistro">
-                <h5>¿Todavía no tienes cuenta?</h5><a href="public/2.html" class="registrateAhora">Regístrate Ahora</a>
-            </div>
+                </div>
 
-            <div class="footer">
-                <h6>Al acceder, aceptas el <span class="footer-aviso">Aviso legal</span></h6>
-                <h6>la <span  class="footer-aviso">Política de privacidad </span>y el <span  class="footer-aviso">Uso de cookies de OneUP</span> </h6>
-            </div>
-            <div class="contenedorIconosResponsive">
-                <a href="https://facebook.com"><img src="./assets/9.png" alt="iconoFB" class="iconoResponsive"></a>
-                <a href="https://instagram.com"> <img src="./assets/8.png" alt="iconoInsta" class="iconoResponsive"></a>
-                <a href="https://youtube.com"><img src="./assets/7.png" alt="iconoYoutube" class="iconoResponsive"></a>  
-            </div>
-        </div>
-    </div>
+              <div class="contenedorIconosResponsive">
+                  <a href="https://facebook.com"><img src="./assets/9.png" alt="iconoFB" class="iconoResponsive"></a>
+                  <a href="https://instagram.com"> <img src="./assets/8.png" alt="iconoInsta"
+                          class="iconoResponsive"></a>
+                  <a href="https://youtube.com"><img src="./assets/7.png" alt="iconoYoutube"
+                          class="iconoResponsive"></a>
+              </div>
+          </div>
+      </div>
 
-</body>
 
-</html>
+      <script src="./js/popup.js"></script>
+  </body>
+
+  </html>

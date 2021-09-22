@@ -16,7 +16,9 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+input {
+    outline: none;
+}
 .contenedorPrincipal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -27,6 +29,9 @@ body {
     display: flex;
     justify-content: space-between;
     z-index: 0;
+}
+.headerResponsive{
+    display: none;
 }
 
 .contenedorVideo {
@@ -72,11 +77,14 @@ body {
 .iconoImagen {
     width: 2.2rem;
     margin-right: .5rem;
-    transition: width .2s ease-in-out;
+    filter: none;
+    transition: filter .2s ease-in-out;
 }
 
 .iconoImagen:hover {
-    width: 3rem;
+    filter: grayscale(100%) saturate(0%) contrast(80%);
+    -webkit-filter: grayscale(100%) saturate(0%) contrast(85%);
+    -moz-filter: grayscale(100%) saturate(0%) contrast(85%);
 }
 
 .contenedorIconoPausa {
@@ -95,6 +103,8 @@ body {
 .containerLogin {
     width: 95%;
     margin: 0 auto;
+    z-index: 25;
+    background-color: #ffdf00;
 }
 
 .logo {
@@ -106,8 +116,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 12%;
-    margin-bottom: 5rem;
+    margin-top: 5%;
+    margin-bottom: 3.5rem;
 }
 
 .imagenLogo {
@@ -193,9 +203,12 @@ body {
     justify-content: center;
     column-gap: .5rem;
     margin-top: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
+.nuevoRegistro h5, .nuevoRegistro a{
+    font-weight: 600;
+}
 .registrateAhora {
     text-decoration: none;
     color: #3b83bd;
@@ -214,19 +227,105 @@ body {
     align-items: center;
     justify-self: center;
     flex-direction: column;
-    margin: 2rem 3rem 4rem 0rem;
+    margin: 2rem 3rem 1.5rem 0rem;
     font-size: 1rem;
     color: #272727;
+}
+.footer h6{
+    font-weight: 600;
 }
 
 .footer-aviso {
     cursor: pointer;
-    color: black;
+    color: #272727;
+    transition: color .1s ease-in-out;
+}
+.footer-aviso:hover{
+    color: #3b83bd;
+}
+/* Imagenes Gobierno*/
+.row-imagenesGobierno{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.col-md-4{
+    width: 33.33333333%
 }
 
 .contenedorIconosResponsive {
     display: none;
 }
+
+.contenedorBonosTransformacion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0 1rem 2rem;
+    border: 1px solid #00aae4;
+    padding-left: 1rem;
+}
+.textBonos{
+    font-size: 1rem;
+    color: #272727;
+    transition: color .2s ease;
+}
+
+.textBonos:hover{
+    color: #00aae4;
+    cursor: pointer;
+}
+
+.ventanaModal{
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 10;
+}
+
+/* Pop up*/
+
+.active {
+    visibility: visible;
+}
+
+.popup {
+    background-color: #ffdf00;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.contenedorBotonCerrar{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-cerrar-popup{
+    border: none;
+    background-color: #ffdf00;
+    font-size: 2rem;
+    color: #272727;
+    margin: .5rem 1rem .5rem ;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.informacion{
+    font-size: 1rem;
+}
+.enlaceCartelAteneo{
+    color: #00aae4;
+}
+
+
 
 
 /* PARTE DEL REGISTRO *************************************************************/
@@ -237,12 +336,15 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 70%;
     margin: 0 auto;
+    outline: none;
 }
 
 .inputsdatosRegistro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    outline: none;
+    outline: none;
 }
 
 .inputRegistronombre {
@@ -259,6 +361,7 @@ body {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    outline: none;
 }
 
 .inputRegistronombre:first-of-type {
@@ -283,7 +386,9 @@ body {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    outline: none;
 }
+
 
 .contraseñaRegistroContainer {
     display: flex;
@@ -317,21 +422,22 @@ body {
     background-image: url(./assets/13.png);
     background-size: 2rem;
     width: 100%;
+    outline: none;
 }
 
 .inputRegistro::-webkit-input-placeholder {
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #272727;
     font-weight: 600;
-
+    
 }
 
 .inputRegistronombre::-webkit-input-placeholder {
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #272727;
     font-weight: 600;
 }
@@ -341,6 +447,7 @@ body {
     border: none;
     align-items: center;
     margin: .7rem auto;
+    margin-top: .5rem;
     width: 70%;
     height: 4.5rem;
     font-family: 'Montserrat', 'sans-serif';
@@ -353,17 +460,19 @@ body {
     background: linear-gradient(90deg, rgba(253, 97, 85, 1) 0%, rgba(240, 60, 72, 1) 58%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6155", endColorstr="#f03c48", GradientType=1);
     cursor: pointer;
+    font-weight: 400;
 }
 
 .containerBotonRegistro {
     align-items: center;
     display: flex;
+    margin-top: .5rem;
 }
 
 /* PAGINA DE REGISTRO COMPLETADO PARA IR AL CORREO*/
 
 .contenedorImagenListo {
-    margin: 3rem;
+    margin: 6.5rem 3rem 3rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,19 +495,24 @@ body {
 .contenedorTextoListo h1 {
     font-size: 1.2rem;
     font-weight: 400;
+    color: #272727
 }
 
 .contenedorTextoListo h2 {
     margin-top: 2.3rem;
+    margin-bottom: 3rem;
 }
 
 .contenedorTextoListo h2 a {
     color: #000;
     font-size: 1.8rem;
     font-style: italic;
-
+    text-underline-position: under;
+    transition: color .2s ease-in-out;
 }
-
+.contenedorTextoListo h2 a:hover{
+    color: #00aae4;
+}
 
 /*PAGINA OLVIDASTE TU CONTRASEÑA 4 *********************/
 
@@ -414,7 +528,7 @@ body {
 
 .contenedorOlvidaste h1 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -422,54 +536,145 @@ body {
     font-size: 1rem;
     font-weight: bold;
 }
+.img-fluid{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 
 /*Responsive desing*/
-@media (max-width: 500px) {
+@media (max-width: 1025px) {
+    .contenedorVideo{
+        width: 50%;
+    }
+    /*parte del registro*/
+    .inputRegistro,
+    .contraseñaRegistroContainer {
+        width: 95%;
+        outline: none;
+        font-size: 1rem;
+    }
+    .inputsNombreCompleto{
+        display: block;
+        width: 100%;
+    }
+    .botonOcultar{
+        width: 1.3rem;
+        margin-right: 1rem;
+    }
+
+    .inputRegistronombre {
+        padding: 0 3rem 0 3rem;
+        height: 3.5rem;
+        background-size: 1.2rem ;
+        font-size: 1rem;
+    }
+    .contraseñaRegistroContainer{
+        height: 3.5rem;
+    }
+    
+    .inputRegistro {
+        padding: 0 3rem 0 3rem;
+        height: 3.5rem;
+        background-size: 1.7rem;
+        background-position: 1rem;
+    }
+    .row-imagenesGobierno{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 1rem .5rem 1rem 4rem;
+    }
+    .col-md-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .contraseñaRegistroContainer .inputRegistro{
+        background-size: 1.3rem;
+    }
+
+    .botonRegistro {
+        width: 95%;
+        margin-top: 1rem;
+        font-size: 1rem;
+        height: 3.5rem;
+    }
+
+    .inputRegistro::-webkit-input-placeholder,
+    .inputRegistronombre::-webkit-input-placeholder {
+        font-size: 1rem;
+    }
+    .popup{
+        width: 90%;
+    }
+
+}
+@media (max-width: 801px) {
+    .popup{
+        width: 90%;
+    }
     .contenedorPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+    .containerLogin .logo{
+        display: none;
+    }
+    .imagenesGobierno{
         display: flex;
         flex-direction: column;
     }
 
     .containerImagen {
+        display: none;
+    }
+    .headerResponsive{
+        display: block;
         background-image: url(./assets/3.png);
-        background-size: 80rem;
+        background-size: 58rem;
         background-position: top right;
         width: 100%;
-        height: 20%;
+        height: 8rem;
         z-index: -2;
-    }
-
-    .contenedorIconoPausa {
+    } 
+    .contenedorIconoPausa, .placaVideo, .contenedorVideo, .contenedorIconos   {
         display: none;
     }
-
-    .contenedorIconos {
-        display: none;
+    .contenedorFlecha{
+        padding: .7rem 0 0 .7rem;
     }
-
-    .contenedorVideo {
-        display: none;
+    .containerLogin{
+        margin-top: 6rem;
     }
-
-    .placaVideo {
-        display: none;
-    }
-
     .iconoImagen {
         margin-right: 2rem;
     }
+    .containerBotonRegistro{
+        margin-top: 0;
+    }
 
     .imagenLogo {
-        width: 15rem;
+        width: 13rem;
     }
 
     .logo {
-        margin-top: -15%;
-        height: 6.3rem;
-        width: 75%;
+        margin-top: 5rem;
+        height: 5.5rem;
+        width: 15.5rem;
         margin-bottom: 4rem;
     }
-
+    .row-imagenesGobierno{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
     .footer {
         margin: 3rem 1rem 4rem 1rem;
         font-size: .9rem;
@@ -503,37 +708,69 @@ body {
     .contenedorIconosResponsive {
         display: flex;
         justify-content: space-evenly;
-        margin: 10%;
+        margin: 1rem 10% 10% 10%;
     }
 
     .iconoResponsive {
         width: 2.4rem;
     }
+    .inputstextRegistro{
+        margin: 0 .7rem;
+    }
+    .img-fluid{
+        width: 63%;
+    }
 
     /*parte del registro*/
-    .inputsNombreCompleto,
     .inputRegistro,
     .contraseñaRegistroContainer {
         width: 95%;
+        outline: none;
+        font-size: 1rem;
+    }
+    .inputsNombreCompleto{
+        display: block;
+        width: 100%;
+    }
+    .botonOcultar{
+        width: 1.3rem;
+        margin-right: 1rem;
     }
 
     .inputRegistronombre {
-        padding: 0 1rem 0 3rem;
+        padding: 0 3rem 0 3rem;
+        height: 3.5rem;
+        background-size: 1.2rem ;
+        font-size: 1rem;
     }
-
+    .contraseñaRegistroContainer{
+        height: 3.5rem;
+    }
+    
     .inputRegistro {
-        padding: 0 2rem 0 4.1rem;
+        padding: 0 3rem 0 3rem;
+        height: 3.5rem;
+        background-size: 1.7rem;
+        background-position: 1rem;
+    }
+    
+    .contraseñaRegistroContainer .inputRegistro{
+        background-size: 1.3rem;
     }
 
     .botonRegistro {
         width: 95%;
         margin-top: 1rem;
+        font-size: 1rem;
+        height: 3.5rem;
     }
 
     .inputRegistro::-webkit-input-placeholder,
     .inputRegistronombre::-webkit-input-placeholder {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+
 
     /*Parte del registro completado*/
     .contenedorImagenListo {
@@ -551,6 +788,7 @@ body {
 
     .contenedorTextoListo h1 {
         font-size: .9rem;
+        color: #272727;
     }
 
     /*Pagina 4 olvidaste tu contraseña*/
@@ -568,11 +806,13 @@ body {
     .contenedorOlvidaste h1 span {
         font-size: 1rem;
     }
-    .contenedorOlvidaste .boldeado{
+
+    .contenedorOlvidaste .boldeado {
         font-size: .7rem;
     }
+
     /* Page 5*/
-    .contenedorTextoListoContraseña{
+    .contenedorTextoListoContraseña {
         margin-bottom: 10rem;
     }
 }
