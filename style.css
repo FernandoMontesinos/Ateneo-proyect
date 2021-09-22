@@ -16,9 +16,11 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 input {
     outline: none;
 }
+
 .contenedorPrincipal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,7 +32,8 @@ input {
     justify-content: space-between;
     z-index: 0;
 }
-.headerResponsive{
+
+.headerResponsive {
     display: none;
 }
 
@@ -206,9 +209,11 @@ input {
     font-weight: 400;
 }
 
-.nuevoRegistro h5, .nuevoRegistro a{
+.nuevoRegistro h5,
+.nuevoRegistro a {
     font-weight: 600;
 }
+
 .registrateAhora {
     text-decoration: none;
     color: #3b83bd;
@@ -231,7 +236,8 @@ input {
     font-size: 1rem;
     color: #272727;
 }
-.footer h6{
+
+.footer h6 {
     font-weight: 600;
 }
 
@@ -240,16 +246,19 @@ input {
     color: #272727;
     transition: color .1s ease-in-out;
 }
-.footer-aviso:hover{
+
+.footer-aviso:hover {
     color: #3b83bd;
 }
+
 /* Imagenes Gobierno*/
-.row-imagenesGobierno{
+.row-imagenesGobierno {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 1rem 1rem 1rem;
 }
-.col-md-4{
+
+.col-md-4 {
     width: 33.33333333%
 }
 
@@ -257,26 +266,38 @@ input {
     display: none;
 }
 
-.contenedorBonosTransformacion{
+.contenedorBonosTransformacion {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 1rem 0 1rem 2rem;
-    border: 1px solid #00aae4;
+    border: 1px solid rgba(0, 0, 0, .125);
     padding-left: 1rem;
 }
-.textBonos{
+
+.contenedorBonosTransformacion:hover {
+    border: 1px solid #00aae4;
+}
+
+.contenedorBonosTransformacion:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.textBonos {
     font-size: 1rem;
     color: #272727;
     transition: color .2s ease;
 }
 
-.textBonos:hover{
+.textBonos:hover {
     color: #00aae4;
     cursor: pointer;
 }
 
-.ventanaModal{
+.ventanaModal {
     background-color: rgba(0, 0, 0, .3);
     position: fixed;
     top: 0;
@@ -305,23 +326,26 @@ input {
     width: 50%;
 }
 
-.contenedorBotonCerrar{
+.contenedorBotonCerrar {
     display: flex;
     justify-content: flex-end;
 }
-.btn-cerrar-popup{
+
+.btn-cerrar-popup {
     border: none;
     background-color: #ffdf00;
     font-size: 2rem;
     color: #272727;
-    margin: .5rem 1rem .5rem ;
+    margin: .5rem 1rem .5rem;
     font-family: 'Montserrat';
     font-weight: bold;
 }
-.informacion{
+
+.informacion {
     font-size: 1rem;
 }
-.enlaceCartelAteneo{
+
+.enlaceCartelAteneo {
     color: #00aae4;
 }
 
@@ -431,7 +455,7 @@ input {
     font-size: 1.3rem;
     color: #272727;
     font-weight: 600;
-    
+
 }
 
 .inputRegistronombre::-webkit-input-placeholder {
@@ -510,7 +534,8 @@ input {
     text-underline-position: under;
     transition: color .2s ease-in-out;
 }
-.contenedorTextoListo h2 a:hover{
+
+.contenedorTextoListo h2 a:hover {
     color: #00aae4;
 }
 
@@ -536,7 +561,8 @@ input {
     font-size: 1rem;
     font-weight: bold;
 }
-.img-fluid{
+
+.img-fluid {
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -546,9 +572,10 @@ input {
 
 /*Responsive desing*/
 @media (max-width: 1025px) {
-    .contenedorVideo{
+    .contenedorVideo {
         width: 50%;
     }
+
     /*parte del registro*/
     .inputRegistro,
     .contraseñaRegistroContainer {
@@ -556,11 +583,13 @@ input {
         outline: none;
         font-size: 1rem;
     }
-    .inputsNombreCompleto{
+
+    .inputsNombreCompleto {
         display: block;
         width: 100%;
     }
-    .botonOcultar{
+
+    .botonOcultar {
         width: 1.3rem;
         margin-right: 1rem;
     }
@@ -568,34 +597,37 @@ input {
     .inputRegistronombre {
         padding: 0 3rem 0 3rem;
         height: 3.5rem;
-        background-size: 1.2rem ;
+        background-size: 1.2rem;
         font-size: 1rem;
     }
-    .contraseñaRegistroContainer{
+
+    .contraseñaRegistroContainer {
         height: 3.5rem;
     }
-    
+
     .inputRegistro {
         padding: 0 3rem 0 3rem;
         height: 3.5rem;
         background-size: 1.7rem;
         background-position: 1rem;
     }
-    .row-imagenesGobierno{
+
+    .row-imagenesGobierno {
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
         margin: 1rem .5rem 1rem 4rem;
     }
-    .col-md-4{
+
+    .col-md-4 {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 1rem;
     }
-    
-    .contraseñaRegistroContainer .inputRegistro{
+
+    .contraseñaRegistroContainer .inputRegistro {
         background-size: 1.3rem;
     }
 
@@ -610,23 +642,28 @@ input {
     .inputRegistronombre::-webkit-input-placeholder {
         font-size: 1rem;
     }
-    .popup{
+
+    .popup {
         width: 90%;
     }
 
 }
+
 @media (max-width: 801px) {
-    .popup{
+    .popup {
         width: 90%;
     }
+
     .contenedorPrincipal {
         display: flex;
         flex-direction: column;
     }
-    .containerLogin .logo{
+
+    .containerLogin .logo {
         display: none;
     }
-    .imagenesGobierno{
+
+    .imagenesGobierno {
         display: flex;
         flex-direction: column;
     }
@@ -634,7 +671,8 @@ input {
     .containerImagen {
         display: none;
     }
-    .headerResponsive{
+
+    .headerResponsive {
         display: block;
         background-image: url(./assets/3.png);
         background-size: 58rem;
@@ -642,20 +680,28 @@ input {
         width: 100%;
         height: 8rem;
         z-index: -2;
-    } 
-    .contenedorIconoPausa, .placaVideo, .contenedorVideo, .contenedorIconos   {
+    }
+
+    .contenedorIconoPausa,
+    .placaVideo,
+    .contenedorVideo,
+    .contenedorIconos {
         display: none;
     }
-    .contenedorFlecha{
+
+    .contenedorFlecha {
         padding: .7rem 0 0 .7rem;
     }
-    .containerLogin{
+
+    .containerLogin {
         margin-top: 6rem;
     }
+
     .iconoImagen {
         margin-right: 2rem;
     }
-    .containerBotonRegistro{
+
+    .containerBotonRegistro {
         margin-top: 0;
     }
 
@@ -669,12 +715,14 @@ input {
         width: 15.5rem;
         margin-bottom: 4rem;
     }
-    .row-imagenesGobierno{
+
+    .row-imagenesGobierno {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         margin: 1rem;
     }
+
     .footer {
         margin: 3rem 1rem 4rem 1rem;
         font-size: .9rem;
@@ -714,10 +762,12 @@ input {
     .iconoResponsive {
         width: 2.4rem;
     }
-    .inputstextRegistro{
+
+    .inputstextRegistro {
         margin: 0 .7rem;
     }
-    .img-fluid{
+
+    .img-fluid {
         width: 63%;
     }
 
@@ -728,11 +778,13 @@ input {
         outline: none;
         font-size: 1rem;
     }
-    .inputsNombreCompleto{
+
+    .inputsNombreCompleto {
         display: block;
         width: 100%;
     }
-    .botonOcultar{
+
+    .botonOcultar {
         width: 1.3rem;
         margin-right: 1rem;
     }
@@ -740,21 +792,22 @@ input {
     .inputRegistronombre {
         padding: 0 3rem 0 3rem;
         height: 3.5rem;
-        background-size: 1.2rem ;
+        background-size: 1.2rem;
         font-size: 1rem;
     }
-    .contraseñaRegistroContainer{
+
+    .contraseñaRegistroContainer {
         height: 3.5rem;
     }
-    
+
     .inputRegistro {
         padding: 0 3rem 0 3rem;
         height: 3.5rem;
         background-size: 1.7rem;
         background-position: 1rem;
     }
-    
-    .contraseñaRegistroContainer .inputRegistro{
+
+    .contraseñaRegistroContainer .inputRegistro {
         background-size: 1.3rem;
     }
 
