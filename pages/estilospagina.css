@@ -75,10 +75,14 @@ body {
 
 .containerImagenCardCurso>.imagenCurso {
     width: 100%;
-    height: 8rem;
+    height: 9rem;
     object-fit: cover;
 }
 
+.imagenCurso {
+    margin-bottom: -.3rem;
+    filter: none;
+}
 
 .seleccionCurso {
     margin: 2rem 6rem 1rem 6rem;
