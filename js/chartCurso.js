@@ -19,6 +19,7 @@ const config = {
     type: 'line',
     data: data,
     options: {
+        maintainAspectRatio: false,
         plugins: {
             legend: false,
         },
